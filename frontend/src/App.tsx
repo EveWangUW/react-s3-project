@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 
-function App() {
+const HelloWorld: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="sm">
+      <Typography variant="h4" gutterBottom>
+        Hello, World!
+      </Typography>
+      <Typography variant="body1">
+        This is a basic hello world frontend using Material-UI (mui) library.
+      </Typography>
+      <Button variant="contained" color="primary">
+        Click me!
+      </Button>
+    </Container>
   );
-}
+};
 
-export default App;
+export default HelloWorld;
